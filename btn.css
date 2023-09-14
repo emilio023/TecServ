@@ -1,0 +1,34 @@
+.boton.btn span {
+	transition: .4s ease-in-out all;
+	position: absolute;
+	left: 40%;
+}
+
+.boton.btn .icono {
+	display: flex;
+	align-items: right;
+	position: absolute;
+	z-index: 2;
+	left: -40px;
+	transition: .3s ease-in-out all;
+	opacity: 0;
+}
+
+.boton.btn svg {
+	color: #fff;
+	width: 35px;
+	height: 35px;
+}
+
+.boton.btn:hover {
+	background: #2f9b05;
+}
+
+.boton.btn:hover .icono {
+	left: calc(100% - 50px);
+	opacity: 1;
+}
+
+.boton.btn:hover span {
+	left: 20px;
+}
